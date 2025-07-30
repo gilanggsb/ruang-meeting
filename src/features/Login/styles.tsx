@@ -49,8 +49,17 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   button: {
-    width:'50%',
-  }
+    width: '50%',
+  },
+  passwordContainer: {
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    borderColor: '#000',
+    paddingBottom: 10,
+  },
+  inputStyle: {
+    flex: 1,
+  },
 });
 
 export default styles;

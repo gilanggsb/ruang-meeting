@@ -1,7 +1,7 @@
-const HOST = 'https://api.ftlgym.com/api/v1/test';
-export const BASE_URL = `${HOST}`;
+const HOST = 'https://api.ftlgym.com';
+export const BASE_URL = `${HOST}/api/v1/test`;
 
 export const URL_PATH = {
-  postLogin: 'login',
-  getJadwalRuangan: 'jadwalruangan'
+  postLogin: '/login',
+  getJadwalRuangan: '/jadwalruangan'
 };

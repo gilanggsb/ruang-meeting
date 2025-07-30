@@ -19,3 +19,15 @@ export type ILoginRequest = {
   "email": string,
   "password": string
 }
+export interface ApiResponseErrorDetail {
+  code: string;
+  reason: string[];
+}
+
+export interface ApiResponse<T> {
+  status: 'success' | 'error'; // Assuming status can also be 'success'
+  message: string;
+  timestamp: string;
+  error: ApiResponseErrorDetail | null; // Nullable if no error
+  data: T; // Generic type for the actual data payload
+}

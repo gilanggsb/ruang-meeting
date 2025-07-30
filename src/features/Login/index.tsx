@@ -62,11 +62,13 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
             }}
             render={({ field: { onChange, onBlur, value } }) => (
               <TextInput
+
                 style={styles.input}
                 onBlur={onBlur}
                 onChangeText={onChange}
                 value={value}
                 placeholder="Enter your password"
+
               />
             )}
           />

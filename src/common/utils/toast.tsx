@@ -1,4 +1,4 @@
-import Toast, {ToastShowParams} from 'react-native-toast-message';
+import Toast, { ToastShowParams } from 'react-native-toast-message';
 
 const showErrorToast = (message: string, params?: ToastShowParams) => {
   Toast.show({
@@ -23,4 +23,5 @@ const showWarningToast = (message: string, params?: ToastShowParams) => {
     text1: message || 'Terjadi Kesalahan',
   });
 };
-export {showErrorToast, showSuccessToast, showWarningToast};
+export { showErrorToast, showSuccessToast, showWarningToast };
+
