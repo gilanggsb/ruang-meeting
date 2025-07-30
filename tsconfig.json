@@ -1,3 +1,18 @@
 {
-  "extends": "@react-native/typescript-config"
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "paths": {
+      "@features/*": ["src/features/*"],
+      "@router/*": ["src/router/*"],
+      "@components/*": ["src/common/components/*"],
+      "@config/*": ["src/common/config/*"],
+      "@constants/*": ["src/common/constants/*"],
+      "@utils/*": ["src/common/utils/*"],
+    }
+  }
 }
