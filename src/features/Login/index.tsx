@@ -16,7 +16,7 @@ export type LoginScreenProps = {
 };
 
 const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
-  const { control, errors, handleSubmit, onSubmit } = useLogin({ navigation });
+  const { control, errors, handleSubmit, onSubmit, isLoginLoading, } = useLogin({ navigation });
 
   return (
     <View style={styles.page}>
@@ -76,7 +76,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
         </View>
 
         <View style={{ marginVertical: 10 }} />
-        <MainButton style={styles.button} title="Submit" onPress={handleSubmit(onSubmit)} />
+        <MainButton loading={isLoginLoading} style={styles.button} title="Submit" onPress={handleSubmit(onSubmit)} />
       </View>
     </View>
   );
